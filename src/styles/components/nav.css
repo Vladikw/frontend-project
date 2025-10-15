@@ -1,0 +1,49 @@
+.nav {
+  display: flex;
+  align-items: center;
+  width: 1230px;
+  height: 52px;
+  margin-top: 20px;
+}
+
+.nav__logo {
+  padding-right: 60px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 40px;
+  padding: 13px 344px 13px 0;
+  flex-grow: 1;
+  color: var(--color-white);
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.nav__btn {
+  border-radius: 4px;
+  height: 100%;
+  width: 199px;
+  background: var(--light-purple);
+  color: var(--color-white);
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  border-color: transparent;
+  font-family: Lato, sans-serif;
+}
+
+.nav__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  opacity: 0.6;
+}
+
+.nav__link--icon {
+  flex-shrink: 0;
+}
+
+/* Полная непрозрачность только для Services */
+.nav__item:first-child .nav__link {
+  opacity: 1; /* ← Services полностью белый */
+}
