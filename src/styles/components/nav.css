@@ -23,13 +23,19 @@
 .nav__btn {
   border-radius: 4px;
   height: 100%;
-  width: 199px;
+  min-width: 199px;
   background: var(--light-purple);
   color: var(--color-white);
   letter-spacing: 0.03em;
   font-size: 16px;
   border-color: transparent;
   font-family: Lato, sans-serif;
+}
+
+.nav__btn:hover {
+  background: var(--color-white);
+  color: var(--light-purple);
+  border-color: var(--light-purple);
 }
 
 .nav__link {
@@ -39,11 +45,70 @@
   opacity: 0.6;
 }
 
-.nav__link--icon {
-  flex-shrink: 0;
+.nav__link:hover {
+  opacity: 1;
+  font-weight: 700;
 }
 
-/* Полная непрозрачность только для Services */
-.nav__item:first-child .nav__link {
-  opacity: 1; /* ← Services полностью белый */
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--color-white);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  padding: 8px;
+}
+
+.dropdown__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Показываем dropdown при наведении */
+.nav__item:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Поворачиваем стрелку при наведении */
+.nav__item:hover .nav__link-icon--dropdown {
+  transform: rotate(180deg);
+}
+
+.nav__link-icon--dropdown {
+  transition: transform 0.3s ease;
+}
+
+.dropdown__link {
+  font-size: 16px;
+  color: var(--color-white);
+  transition: color 0.3s ease-in-out;
+  opacity: 0.6;
+}
+
+.dropdown__link:hover {
+  opacity: 1;
 }

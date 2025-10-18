@@ -1,2 +1,36 @@
-header {
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.page__header {
+  background-image: url('/images/background.jpg');
+}
+
+.header__title {
+  display: inline-block;
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--color-white);
+  padding-bottom: 32px;
+}
+
+.header__subtitle {
+  display: inline-block;
+  max-width: 810px;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-white);
+  opacity: 0.6;
+  padding-bottom: 40px;
 }

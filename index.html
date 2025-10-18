@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo-title.svg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Createx</title>
 
     <style media="(prefers-color-scheme: light)">
       @import url('./src/styles/colors/light.css');
@@ -12,6 +13,13 @@
     <style media="(prefers-color-scheme: dark)">
       @import url('./src/styles/colors/dark.css');
     </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -60,7 +68,13 @@
               <li class="nav__item">
                 <a class="nav__link" href="#">
                   Services
-                  <svg class="nav__link-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <svg
+                    class="nav__link-icon nav__link-icon--dropdown"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
@@ -69,6 +83,15 @@
                     />
                   </svg>
                 </a>
+                <div class="dropdown">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__item">
+                      <a href="#" class="dropdown__link">Social Media Marketing</a>
+                    </li>
+                    <li class="dropdown__item"><a href="#" class="dropdown__link">SEO Optimization</a></li>
+                    <li class="dropdown__item"><a href="#" class="dropdown__link">Content Marketing</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="nav__item"><a class="nav__link" href="#">Case Studies</a></li>
               <li class="nav__item"><a class="nav__link" href="#">About Us</a></li>
@@ -80,11 +103,224 @@
             <!--<button class="nav__btn"><a>Talk to a human</a></button>-->
           </nav>
 
-          <header>header</header>
+          <div class="header">
+            <div>
+              <nav class="breadcrumbs">
+                <a href="#" class="breadcrumbs__link">
+                  <img src="/images/home.svg" alt="Home" class="breadcrumbs__icon" />
+                </a>
+
+                <span class="breadcrumbs__separator">
+                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.6">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.52925 3.36225C5.7896 3.1019 6.21171 3.1019 6.47206 3.36225L11.1387 8.02892C11.3991 8.28927 11.3991 8.71138 11.1387 8.97173L6.47206 13.6384C6.21171 13.8987 5.7896 13.8987 5.52925 13.6384C5.2689 13.378 5.2689 12.9559 5.52925 12.6956L9.72451 8.50033L5.52925 4.30506C5.2689 4.04471 5.2689 3.6226 5.52925 3.36225Z"
+                        fill="white"
+                      />
+                    </g>
+                  </svg>
+                </span>
+
+                <a href="#" class="breadcrumbs__link">Services</a>
+
+                <span class="breadcrumbs__separator">
+                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.6">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.52925 3.36225C5.7896 3.1019 6.21171 3.1019 6.47206 3.36225L11.1387 8.02892C11.3991 8.28927 11.3991 8.71138 11.1387 8.97173L6.47206 13.6384C6.21171 13.8987 5.7896 13.8987 5.52925 13.6384C5.2689 13.378 5.2689 12.9559 5.52925 12.6956L9.72451 8.50033L5.52925 4.30506C5.2689 4.04471 5.2689 3.6226 5.52925 3.36225Z"
+                        fill="white"
+                      />
+                    </g>
+                  </svg>
+                </span>
+
+                <span class="breadcrumbs__current">Search Engine Optimization</span>
+              </nav>
+              <h1 class="header__title">Search Engine Optimization</h1>
+              <p class="header__subtitle">
+                Ipsum blandit etiam nunc vitae. Duis lobortis odio vel morbi dui pellentesque enim integer facilisi.
+                Ultrices vitae tempor amet nec euismod non.
+              </p>
+              <div class="search-container">
+                <form class="search-form">
+                  <label class="search-label">Your website URL</label>
+                  <div class="search-input-group">
+                    <input type="text" class="search-input" placeholder="http://yoursite.com" required />
+                    <button type="submit" class="search-btn">Analyse your site</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
-      <div class="page__content">content</div>
-      <footer class="page__footer">footer</footer>
+      <div class="page__content">
+        <div class="container">
+          <div class="clients">
+            <ul class="clients__list">
+              <li class="clients__item">
+                <img src="/images/client-logo-1.png" />
+              </li>
+              <li class="clients__item">
+                <img src="/images/client-logo-2.png" />
+              </li>
+              <li class="clients__item">
+                <img src="/images/client-logo-3.png" />
+              </li>
+              <li class="clients__item">
+                <img src="/images/client-logo-4.png" />
+              </li>
+              <li class="clients__item">
+                <img src="/images/client-logo-5.png" />
+              </li>
+              <li class="clients__item">
+                <img src="/images/client-logo-6.png" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer class="page__footer">
+        <div class="footer__container container">
+          <div class="footer__top">
+            <div class="footer__info">
+              <a href="#" class="footer__logo">
+                <img src="/images/logo.svg" alt="Createx" class="footer__logo-img" />
+              </a>
+              <p class="footer__description">
+                Createx SEO Agency is a full-service digital marketing agency. We help businesses make more money
+                through a wealth of performance data and market research. We create science-based SEO strategies to
+                empower our clients.
+              </p>
+              <ul class="footer__social">
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link" aria-label="Facebook">
+                    <img src="/images/facebook-icon.svg" 
+                      alt="Facebook" class="footer__social-icon" 
+                      width="24"
+                      height="24""
+                     />
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                    <img src="/images/linkedin-icon.svg" 
+                      alt="LinkedIn" 
+                      class="footer__social-icon" 
+                      width="24"
+                      height="24"
+                    />
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link" aria-label="Twitter">
+                    <img
+                      src="/images/twitter-icon.svg"
+                      alt="Twitter"
+                      class="footer__social-icon"
+                      width="24"
+                      height="24"
+                    />
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-link" aria-label="Instagram">
+                    <img
+                      src="/images/instagram-icon.svg"
+                      alt="Instagram"
+                      class="footer__social-icon"
+                      width="24"
+                      height="24"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <div class="footer__nav-column">
+                <span class="footer__nav-title">COMPANY</span>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item"><a href="#" class="footer__nav-link">About Us</a></li>
+                  <li class="footer__nav-item"><a href="#" class="footer__nav-link">Case Studies</a></li>
+                  <li class="footer__nav-item"><a href="#" class="footer__nav-link">Blog</a></li>
+                  <li class="footer__nav-item"><a href="#" class="footer__nav-link">Careers</a></li>
+                  <li class="footer__nav-item"><a href="#" class="footer__nav-link">Contacts</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-column">
+                <span class="footer__nav-title">SERVICES</span>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item"><a href="#" class="footer__nav-link">Social Media</a></li>
+                  <li class="footer__nav-item"><a href="#" class="footer__nav-link">SEO</a></li>
+                  <li class="footer__nav-item"><a href="#" class="footer__nav-link">Research</a></li>
+                  <li class="footer__nav-item"><a href="#" class="footer__nav-link">Content & PR</a></li>
+                  <li class="footer__nav-item"><a href="#" class="footer__nav-link">Payed Traffic</a></li>
+                </ul>
+              </div>
+              <div class="footer__contacts">
+                <span class="footer__contacts-title">CONTACT US</span>
+                <ul class="footer__contacts-list">
+                  <li class="footer__contacts-item">
+                    <a href="tel:+4055550128" class="footer__contacts-link">
+                      <svg class="footer__contacts-icon" width="16" height="16">
+                        <use href="/images/iPhone.svg"></use>
+                      </svg>
+                      (405) 555-0128
+                    </a>
+                  </li>
+                  <li class="footer__contacts-item">
+                    <a href="mailto:hello@createx.com" class="footer__contacts-link">
+                      <svg class="footer__contacts-icon" width="16" height="16">
+                        <use href="/images/Mail.svg"></use>
+                      </svg>
+                      hello@createx.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__subscribe">
+                <span class="footer__subscribe-title">SIGN UP TO OUR NEWSLETTER</span>
+                <form class="footer__form">
+                  <input type="email" class="footer__form-input" placeholder="Email address" required />
+                  <button type="submit" class="footer__form-button">
+                    <svg class="footer__form-icon" width="16" height="16">
+                      <use href="/images/arrow.svg"></use>
+                    </svg>
+                  </button>
+                </form>
+                <span class="footer__form-note">
+                  *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
+                </span>
+              </div>
+            </div>
+          </div>
+          <ul class="footer__awards">
+            <li class="footer__awards-item">
+              <img src="/images/award-1.svg" alt="Clutch Award" class="footer__awards-img" />
+            </li>
+            <li class="footer__awards-item">
+              <img src="/images/award-2.svg" alt="GoodFirms Award" class="footer__awards-img" />
+            </li>
+            <li class="footer__awards-item">
+              <img src="/images/award-3.svg" alt="Google Award" class="footer__awards-img" />
+            </li>
+            <li class="footer__awards-item">
+              <img src="/images/award-4.svg" alt="HubSpot Award" class="footer__awards-img" />
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <span class="footer__copyright">
+              © All rights reserved. Made with <span class="footer__copyright-heart"> </span> by Createx Studio
+            </span>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script type="module" src="/src/index.js"></script>
