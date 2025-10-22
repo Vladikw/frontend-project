@@ -36,12 +36,12 @@
 .analysis-form__input {
   width: 100%;
   height: 44px;
-  border: 1px solid transparent; /* всегда есть, но прозрачная */
+  border: 1px solid transparent;
   border-radius: 4px;
   background: var(--color-gray-200);
+  color: var(--color-gray-900);
   font-size: 16px;
   padding: 0 16px;
-  color: var(--color-white);
   box-sizing: border-box;
   transition: all 0.3s ease;
 }
@@ -49,9 +49,10 @@
 .analysis-form__input:hover,
 .analysis-form__input:focus {
   border-color: var(--color-white);
-  box-shadow: inset 0 0 6px rgb(255 255 255 / 40%); /* мягкое внутреннее свечение */
+  box-shadow: inset 0 0 6px rgb(255 255 255 / 40%);
   outline: none;
   background: rgb(255 255 255 / 18%);
+  color: var(--color-white);
 }
 
 .analysis-form__button {
