@@ -11,7 +11,7 @@
 }
 
 .search-label {
-  color: var(--color-white);
+  color: var(--text-inverse);
   display: block;
   text-align: left;
   padding-bottom: 8px;
@@ -32,16 +32,24 @@
 
 .search-input {
   flex-grow: 1;
-  border: none;
+  border: 1px solid transparent; /* граница всегда есть */
   padding: 0 16px;
-  color: var(--color-white);
+  color: var(--text-inverse);
   background: rgb(255 255 255 / 12%);
   font-family: Lato, sans-serif;
   font-size: 16px;
+  transition: all 0.3s ease;
 }
 
 .search-input::placeholder {
   color: rgb(255 255 255 / 60%);
+}
+
+.search-input:focus,
+.search-input:hover {
+  border-color: var(--primary); /* цвет появляется */
+  box-shadow: inset 0 0 4px rgb(255 255 255 / 40%); /* внутренняя подсветка */
+  outline: none;
 }
 
 .search-btn {
@@ -52,13 +60,83 @@
   line-height: 325%;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--color-white);
-  background-color: var(--light-purple);
   border: none;
+  color: var(--text-inverse);
+  background-color: var(--primary);
 }
 
 .search-btn:hover {
   font-weight: 700;
-  color: var(--light-purple);
-  background-color: var(--color-white);
+  color: var(--primary);
+  background-color: var(--text-inverse);
+}
+
+/* --- Адаптивность  --- */
+
+@media (width <= 1024px) {
+  .search-container {
+    min-width: 100%;
+    padding: 0 16px;
+  }
+
+  .search-form {
+    width: 100%;
+    padding-bottom: 80px;
+  }
+
+  .search-input-group {
+    height: 48px;
+  }
+
+  .search-input {
+    font-size: 15px;
+    padding: 0 12px;
+  }
+
+  .search-btn {
+    width: 180px;
+    font-size: 15px;
+  }
+}
+
+@media (width <= 768px) {
+  .search-container {
+    padding: 0 12px;
+  }
+
+  .search-form {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+
+  .search-input-group {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .search-input {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 8px;
+  }
+
+  .search-btn {
+    width: 100%;
+    height: 48px;
+  }
+}
+
+@media (width <= 480px) {
+  .search-label {
+    font-size: 14px;
+  }
+
+  .search-input {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .search-btn {
+    font-size: 14px;
+  }
 }

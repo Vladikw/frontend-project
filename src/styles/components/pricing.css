@@ -1,0 +1,272 @@
+.pricing__plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding-bottom: 120px;
+}
+
+.pricing__title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--text-primary);
+  padding-bottom: 60px;
+}
+
+.pricing-card {
+  border: 1px solid rgb(119 114 241 / 40%);
+  border-radius: 4px;
+}
+
+.pricing-card__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--text-primary);
+  padding-bottom: 8px;
+  padding-top: 24px;
+}
+
+.pricing-card__price {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: var(--primary);
+  padding-bottom: 16px;
+}
+
+.pricing-card__price-small {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--primary);
+}
+
+.pricing-card--featured {
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+  box-shadow: 0 0 30px 0 #1e212c;
+  border-color: var(--success);
+}
+
+.pricing-card--featured .pricing-card__price,
+.pricing-card--featured .pricing-card__price-small {
+  color: var(--success);
+}
+
+.pricing-card--featured .pricing-card__title {
+  color: var(--color-white);
+}
+
+.pricing-card__list {
+  padding: 24px 100px 32px;
+  display: grid;
+  gap: 8px;
+}
+
+.pricing-card__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  position: relative;
+  padding-left: 24px;
+}
+
+.pricing-card__btn {
+  display: block;
+  width: 146px;
+  height: 44px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 44px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.pricing-card--featured .pricing-card__btn {
+  color: var(--color-white);
+  background-color: var(--primary);
+}
+
+.pricing-card__item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: currentcolor;
+  mask-image: url('/images/icon__check.svg');
+  mask-size: 16px 16px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  color: var(--primary);
+}
+
+/* Крестики такого же размера и положения */
+.pricing-card:nth-child(1) .pricing-card__item:nth-child(6)::before,
+.pricing-card:nth-child(1) .pricing-card__item:nth-child(7)::before {
+  mask-image: url('/images/icon__cross.svg');
+  mask-size: 14px 14px;
+  mask-position: center;
+  color: var(--text-tertiary);
+}
+
+/* Крестик success цвета для второй колонки */
+.pricing-card:nth-child(2) .pricing-card__item:nth-child(7)::before {
+  mask-image: url('/images/icon__cross.svg');
+  mask-size: 14px 14px;
+  mask-position: center;
+  color: var(--success);
+}
+
+/* Серый цвет для текста последних 2 пунктов в первом столбце */
+.pricing-card:nth-child(1) .pricing-card__item:nth-child(6),
+.pricing-card:nth-child(1) .pricing-card__item:nth-child(7),
+.pricing-card:nth-child(2) .pricing-card__item:nth-child(7) {
+  color: var(--text-tertiary);
+}
+
+/* Hover для обычных кнопок (outline) */
+.pricing-card__btn:hover {
+  background-color: var(--primary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgb(119 114 241 / 30%);
+}
+
+.pricing-card--featured .pricing-card__btn:hover {
+  background-color: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgb(119 114 241 / 30%);
+}
+
+/* Планшеты */
+@media (width <= 1024px) {
+  .pricing__plans {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 100px;
+  }
+
+  .pricing__title {
+    font-size: 36px;
+    padding-bottom: 40px;
+  }
+
+  .pricing-card__title {
+    font-size: 24px;
+    padding-top: 16px;
+  }
+
+  .pricing-card__price {
+    font-size: 36px;
+    padding-bottom: 12px;
+  }
+
+  .pricing-card__price-small {
+    font-size: 18px;
+  }
+
+  .pricing-card__list {
+    padding: 20px 40px 24px;
+  }
+
+  .pricing-card__item {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  .pricing-card__btn {
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+}
+
+/* Мобильные */
+@media (width <= 768px) {
+  .pricing__plans {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-bottom: 80px;
+  }
+
+  .pricing__title {
+    font-size: 28px;
+    padding-bottom: 32px;
+  }
+
+  .pricing-card__title {
+    font-size: 20px;
+    padding-top: 12px;
+  }
+
+  .pricing-card__price {
+    font-size: 28px;
+    padding-bottom: 8px;
+  }
+
+  .pricing-card__price-small {
+    font-size: 16px;
+  }
+
+  .pricing-card__list {
+    padding: 16px 20px;
+  }
+
+  .pricing-card__item {
+    font-size: 13px;
+    padding-left: 18px;
+  }
+
+  .pricing-card__btn {
+    width: 130px;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+}
+
+/* Очень маленькие экраны */
+@media (width <= 480px) {
+  .pricing__title {
+    font-size: 24px;
+    padding-bottom: 24px;
+  }
+
+  .pricing-card__title {
+    font-size: 18px;
+  }
+
+  .pricing-card__price {
+    font-size: 24px;
+  }
+
+  .pricing-card__price-small {
+    font-size: 14px;
+  }
+
+  .pricing-card__item {
+    font-size: 12px;
+    padding-left: 16px;
+  }
+
+  .pricing-card__btn {
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+  }
+}

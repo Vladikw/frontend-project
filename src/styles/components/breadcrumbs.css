@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-white);
+  color: var(--text-inverse);
   padding-top: 90px;
   padding-bottom: 40px;
   gap: 8px;
@@ -14,13 +14,13 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: var(--color-white);
+  color: var(--text-inverse);
   display: flex;
   align-items: center;
 }
 
 .breadcrumbs__link:hover {
-  color: var(--light-purple);
+  color: var(--primary);
 }
 
 .breadcrumbs__icon {
@@ -33,12 +33,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: var(--color-white);
-  opacity: 0.6;
+  color: var(--text-inverse-secondary);
 }
 
 .breadcrumbs__separator {
   display: flex;
   align-items: center;
-  opacity: 0.6;
+  color: var(--text-inverse-secondary);
 }

@@ -1,0 +1,315 @@
+.case_studies {
+  background: var(--surface-secondary);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.case_studies__title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--text-primary);
+  padding-bottom: 60px;
+}
+
+.case_studies__studies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding-bottom: 60px;
+}
+
+.studies-card__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--text-primary);
+  padding-bottom: 20px;
+}
+
+.studies-card__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--text-secondary);
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+.studies-card__divider {
+  background-color: var(--color-gray-400);
+  width: 100%;
+}
+
+.features_list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.case_studies__card {
+  background: var(--background);
+  padding: 32px;
+  border-radius: 4px;
+  transition: background-image 1s ease 0.1s;
+}
+
+.case_studies__card:hover {
+  background-image: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url('/images/case_studies/background.jpg');
+}
+
+.case_studies__card:hover .studies-card__title,
+.case_studies__card:hover .studies-card__text,
+.case_studies__card:hover .features_list-item-procent,
+.case_studies__card:hover .features_list-item-text {
+  color: var(--color-white);
+}
+
+.features_list-item {
+  display: grid;
+  grid-template-columns: 40px auto;
+  gap: 0 12px;
+}
+
+.features_list-item--no-icon {
+  grid-template-columns: auto; /* Убираем колонку для иконки */
+  gap: 0;
+}
+
+.features_list-item-svg {
+  width: 40px;
+  height: 40px;
+  grid-row: 1 / 3;
+  align-self: center;
+  fill: none;
+  stroke-width: 4px;
+}
+
+.features_list-item-procent {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--text-primary);
+}
+
+.features_list-item-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--text-primary);
+}
+
+.case_studies__cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 745px;
+  height: 52px;
+  margin: 0 auto;
+}
+
+.case_studies__text-field {
+  flex: 1;
+  height: 52px;
+}
+
+.case_studies__cta-text {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: var(--text-primary);
+  white-space: nowrap;
+  padding-right: 40px;
+}
+
+.case_studies__cta-button {
+  background: var(--primary);
+  color: var(--text-inverse);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 100%;
+  width: 237px;
+  border-color: var(--primary);
+}
+
+.case_studies__cta-button:hover {
+  background: var(--text-inverse);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.case_studies__toggle {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 390px;
+  height: 46px;
+  margin: 0 auto 60px;
+  border: 1px solid var(--primary);
+  border-radius: 40px;
+  background: transparent;
+  overflow: hidden;
+}
+
+/* Кнопки */
+.case_studies__toggle-btn {
+  position: relative;
+  z-index: 2;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: var(--primary);
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Маленький текст “-12% Off” */
+.case_studies__toggle-off {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--primary);
+}
+
+/* Активная половина */
+.case_studies__toggle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 54%; /* ровно половина, без зазоров */
+  height: 100%;
+  background: var(--primary);
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+/* Если активна правая */
+.case_studies__toggle.right-active::before {
+  left: 46%;
+}
+
+/* Цвета текста при активной */
+.case_studies__toggle-btn.active {
+  color: var(--color-white);
+}
+
+.case_studies__toggle-btn.active .case_studies__toggle-off {
+  color: var(--color-white);
+}
+
+@media (width <= 1024px) {
+  .case_studies {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .case_studies__title {
+    font-size: 36px;
+    padding-bottom: 40px;
+  }
+
+  .case_studies__studies {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .studies-card__text {
+    padding-bottom: 50px;
+  }
+
+  .case_studies__cta-text {
+    font-size: 24px;
+    padding-right: 24px;
+  }
+
+  .case_studies__cta-button {
+    width: 180px;
+  }
+}
+
+@media (width <= 768px) {
+  .case_studies {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .case_studies__title {
+    font-size: 28px;
+    padding-bottom: 32px;
+  }
+
+  .case_studies__studies {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .studies-card__title {
+    font-size: 16px;
+    padding-bottom: 12px;
+  }
+
+  .studies-card__text {
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 32px;
+  }
+
+  .features_list-item-procent {
+    font-size: 16px;
+  }
+
+  .features_list-item-text {
+    font-size: 10px;
+  }
+
+  .case_studies__cta {
+    flex-direction: column;
+    gap: 12px;
+    height: auto;
+  }
+
+  .case_studies__cta-text {
+    font-size: 20px;
+    padding-right: 0;
+  }
+
+  .case_studies__cta-button {
+    width: 100%;
+    height: 44px;
+  }
+}
+
+@media (width <= 480px) {
+  .case_studies__title {
+    font-size: 24px;
+  }
+
+  .studies-card__text {
+    font-size: 12px;
+  }
+
+  .features_list-item-procent {
+    font-size: 14px;
+  }
+
+  .features_list-item-text {
+    font-size: 10px;
+  }
+
+  .case_studies__cta-text {
+    font-size: 18px;
+  }
+}

@@ -6,10 +6,6 @@
   width: 100%;
 }
 
-.page__header {
-  background-image: url('/images/background.jpg');
-}
-
 .header__title {
   display: inline-block;
   font-family: Lato, sans-serif;
@@ -18,7 +14,7 @@
   line-height: 130%;
   letter-spacing: 0.01em;
   text-align: center;
-  color: var(--color-white);
+  color: var(--text-inverse);
   padding-bottom: 32px;
 }
 
@@ -30,7 +26,46 @@
   font-size: 20px;
   line-height: 150%;
   text-align: center;
-  color: var(--color-white);
-  opacity: 0.6;
+  color: var(--text-inverse-secondary);
   padding-bottom: 40px;
+}
+
+/* --- Адаптивность  --- */
+
+@media (width <= 1024px) {
+  .header__title {
+    font-size: 60px;
+    padding-bottom: 24px;
+  }
+
+  .header__subtitle {
+    font-size: 18px;
+    max-width: 600px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (width <= 768px) {
+  .header__title {
+    font-size: 48px;
+    padding-bottom: 20px;
+  }
+
+  .header__subtitle {
+    font-size: 16px;
+    max-width: 100%;
+    padding-bottom: 24px;
+  }
+}
+
+@media (width <= 480px) {
+  .header__title {
+    font-size: 36px;
+    padding-bottom: 16px;
+  }
+
+  .header__subtitle {
+    font-size: 14px;
+    padding-bottom: 16px;
+  }
 }
