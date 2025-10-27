@@ -1,0 +1,25 @@
+.services-nav__btn {
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-tertiary);
+  transition: all 0.3s ease;
+  width: 246px;
+  line-height: 160%;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.services-nav__btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.services-nav__btn--active,
+.services-nav__btn--active:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}

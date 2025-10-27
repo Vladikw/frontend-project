@@ -12,6 +12,7 @@
 .page__content {
   flex-grow: 1;
   background-color: var(--background);
+  background-image: url('/images/Background_content.svg');
 }
 
 .page__footer {

@@ -1,0 +1,38 @@
+.banner {
+  display: flex;
+  padding: 90px 0;
+  gap: 40px;
+}
+
+.banner__media {
+  border-radius: 4px;
+  flex-grow: 1;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner__image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.banner__content {
+  width: 43%;
+  padding-left: 135px;
+}
+
+.banner__title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: var(--text-primary);
+  padding-bottom: 40px;
+}
+
+.banner__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--text-secondary);
+}

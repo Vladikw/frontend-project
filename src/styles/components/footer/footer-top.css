@@ -1,9 +1,3 @@
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-}
-
 .footer__top {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -24,7 +18,6 @@
   max-width: 285px;
   padding-top: 24px;
   padding-bottom: 38px;
-  font-family: Lato, sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
@@ -66,7 +59,6 @@
 .footer__nav-title,
 .footer__contacts-title,
 .footer__subscribe-title {
-  font-family: Lato, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
@@ -111,10 +103,16 @@
 
 .footer__form-input {
   background: transparent;
-  border: none;
+  border: 1px solid transparent;
   color: var(--text-inverse);
   padding: 8px 12px;
   width: 256px;
+}
+
+.footer__form-input:focus,
+.footer__form-input:hover {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 4px rgb(255 255 255 / 40%);
 }
 
 .footer__form-button {
@@ -147,32 +145,9 @@
   border-top: 1px solid rgb(255 255 255 / 60%);
 }
 
-.footer__bottom {
-  background: rgb(255 255 255 / 5%);
-  padding: 20px 0;
-}
-
-.footer__copyright {
-  text-align: center;
-  font-family: Lato, sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  color: var(--text-inverse);
-}
-
-.footer__copyright-heart {
-  color: var(--primary);
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.footer__copyright-heart::before {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 14px;
-  background: url('images/heart.svg') no-repeat center;
-  background-size: contain;
+/* Контейнер внутри футера */
+.page__footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }

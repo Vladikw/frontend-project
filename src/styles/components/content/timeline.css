@@ -62,7 +62,7 @@
   padding-left: 40px;
 }
 
-.step__number {
+.timeline__step-number {
   font-weight: 900;
   font-size: 12px;
   line-height: 150%;
@@ -70,7 +70,7 @@
   padding-bottom: 2px;
 }
 
-.step__title {
+.timeline__step-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
@@ -78,69 +78,9 @@
   padding-bottom: 8px;
 }
 
-.step__desc {
+.timeline__step-desc {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   color: var(--text-secondary);
-}
-
-@media (width <= 1024px) {
-  .timeline {
-    padding-top: 100px;
-    padding-bottom: 140px;
-  }
-
-  .timeline__title {
-    font-size: 36px;
-    padding-bottom: 50px;
-  }
-
-  .step__title {
-    font-size: 18px;
-  }
-
-  .step__desc {
-    font-size: 14px;
-  }
-}
-
-@media (width <= 768px) {
-  .timeline {
-    padding-top: 80px;
-    padding-bottom: 100px;
-  }
-
-  .timeline__title {
-    font-size: 28px;
-    padding-bottom: 40px;
-  }
-
-  .step__title {
-    font-size: 16px;
-  }
-
-  .step__desc {
-    font-size: 13px;
-  }
-}
-
-@media (width <= 480px) {
-  .timeline {
-    padding-top: 60px;
-    padding-bottom: 80px;
-  }
-
-  .timeline__title {
-    font-size: 24px;
-    padding-bottom: 32px;
-  }
-
-  .step__title {
-    font-size: 14px;
-  }
-
-  .step__desc {
-    font-size: 12px;
-  }
 }

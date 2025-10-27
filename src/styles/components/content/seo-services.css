@@ -1,0 +1,48 @@
+.seo-services {
+  padding: 90px 0 120px;
+}
+
+.seo-services__title {
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.seo-services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 60px;
+}
+
+/* Стили для элемента-микса seo-services__card */
+.seo-services__card {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  padding: 40px 94px;
+  box-sizing: border-box;
+}
+
+/* Левая колонка */
+.seo-services__card:nth-child(3n + 1) {
+  padding-left: 0;
+}
+
+/* Правая колонка */
+.seo-services__card:nth-child(3n) {
+  padding-right: 0;
+  border-right: none;
+}
+
+/* Верхний ряд */
+.seo-services__card:nth-child(-n + 3) {
+  padding-top: 0;
+}
+
+/* Нижний ряд */
+.seo-services__card:nth-last-child(-n + 3) {
+  padding-bottom: 0;
+  border-bottom: none;
+}

@@ -1,0 +1,27 @@
+.footer__bottom {
+  background: rgb(255 255 255 / 5%);
+  padding: 20px 0;
+}
+
+.footer__copyright {
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--text-inverse);
+}
+
+.footer__copyright-heart {
+  color: var(--primary);
+  display: inline-flex;
+  gap: 4px;
+}
+
+.footer__copyright-heart::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  background: url('images/heart.svg') no-repeat center;
+  background-size: contain;
+}

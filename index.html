@@ -26,7 +26,7 @@
     <div class="page">
       <header class="page__header">
         <div class="container">
-          <nav class="nav">
+          <nav class="nav page__nav">
             <div class="nav__logo">
               <svg width="130" height="22" viewBox="0 0 130 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -65,7 +65,7 @@
             </div>
 
             <ul class="nav__list">
-              <li class="nav__item">
+              <li class="nav__item nav__item--dropdown">
                 <a class="nav__link" href="#">
                   Services
                   <svg
@@ -83,7 +83,7 @@
                     />
                   </svg>
                 </a>
-                <div class="dropdown">
+                <div class="nav__dropdown dropdown">
                   <ul class="dropdown__list">
                     <li class="dropdown__item">
                       <a href="#" class="dropdown__link">Social Media Marketing</a>
@@ -102,54 +102,55 @@
             <button class="nav__btn">Talk to a human</button>
           </nav>
 
-          <div class="header">
-            <div>
-              <nav class="breadcrumbs">
-                <a href="#" class="breadcrumbs__link">
-                  <img src="/images/home.svg" alt="Home" class="breadcrumbs__icon" />
-                </a>
+          <div class="hero page__hero">
+            <nav class="hero__breadcrumbs breadcrumbs">
+              <a href="#" class="breadcrumbs__link">
+                <img src="/images/home.svg" alt="Home" class="breadcrumbs__icon" />
+              </a>
 
-                <span class="breadcrumbs__separator">
-                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.6">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M5.52925 3.36225C5.7896 3.1019 6.21171 3.1019 6.47206 3.36225L11.1387 8.02892C11.3991 8.28927 11.3991 8.71138 11.1387 8.97173L6.47206 13.6384C6.21171 13.8987 5.7896 13.8987 5.52925 13.6384C5.2689 13.378 5.2689 12.9559 5.52925 12.6956L9.72451 8.50033L5.52925 4.30506C5.2689 4.04471 5.2689 3.6226 5.52925 3.36225Z"
-                        fill="white"
-                      />
-                    </g>
-                  </svg>
-                </span>
+              <span class="breadcrumbs__separator">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.6">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.52925 3.36225C5.7896 3.1019 6.21171 3.1019 6.47206 3.36225L11.1387 8.02892C11.3991 8.28927 11.3991 8.71138 11.1387 8.97173L6.47206 13.6384C6.21171 13.8987 5.7896 13.8987 5.52925 13.6384C5.2689 13.378 5.2689 12.9559 5.52925 12.6956L9.72451 8.50033L5.52925 4.30506C5.2689 4.04471 5.2689 3.6226 5.52925 3.36225Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </span>
 
-                <a href="#" class="breadcrumbs__link">Services</a>
+              <a href="#" class="breadcrumbs__link">Services</a>
 
-                <span class="breadcrumbs__separator">
-                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.6">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M5.52925 3.36225C5.7896 3.1019 6.21171 3.1019 6.47206 3.36225L11.1387 8.02892C11.3991 8.28927 11.3991 8.71138 11.1387 8.97173L6.47206 13.6384C6.21171 13.8987 5.7896 13.8987 5.52925 13.6384C5.2689 13.378 5.2689 12.9559 5.52925 12.6956L9.72451 8.50033L5.52925 4.30506C5.2689 4.04471 5.2689 3.6226 5.52925 3.36225Z"
-                        fill="white"
-                      />
-                    </g>
-                  </svg>
-                </span>
+              <span class="breadcrumbs__separator">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.6">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.52925 3.36225C5.7896 3.1019 6.21171 3.1019 6.47206 3.36225L11.1387 8.02892C11.3991 8.28927 11.3991 8.71138 11.1387 8.97173L6.47206 13.6384C6.21171 13.8987 5.7896 13.8987 5.52925 13.6384C5.2689 13.378 5.2689 12.9559 5.52925 12.6956L9.72451 8.50033L5.52925 4.30506C5.2689 4.04471 5.2689 3.6226 5.52925 3.36225Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </span>
 
-                <span class="breadcrumbs__current">Search Engine Optimization</span>
-              </nav>
-              <h1 class="header__title">Search Engine Optimization</h1>
-              <p class="header__subtitle">
+              <span class="breadcrumbs__current">Search Engine Optimization</span>
+            </nav>
+
+            <div class="hero__content">
+              <h1 class="hero__title">Search Engine Optimization</h1>
+              <p class="hero__subtitle">
                 Ipsum blandit etiam nunc vitae. Duis lobortis odio vel morbi dui pellentesque enim integer facilisi.
                 Ultrices vitae tempor amet nec euismod non.
               </p>
-              <div class="search-container">
-                <form class="search-form">
-                  <label class="search-label">Your website URL</label>
-                  <div class="search-input-group">
-                    <input type="text" class="search-input" placeholder="http://yoursite.com" required />
-                    <button type="submit" class="search-btn">Analyse your site</button>
+              <div class="hero__search search-form">
+                <form class="search-form__form">
+                  <label class="search-form__label">Your website URL</label>
+                  <div class="search-form__group">
+                    <input type="text" class="search-form__input" placeholder="http://yoursite.com" required />
+                    <button type="submit" class="search-form__button">Analyse your site</button>
                   </div>
                 </form>
               </div>
@@ -164,33 +165,33 @@
           <div class="clients">
             <ul class="clients__list">
               <li class="clients__item">
-                <img src="/images/client-logo-1.png" />
+                <img class="clients__logo" src="/images/client-logo-1.png" />
               </li>
               <li class="clients__item">
-                <img src="/images/client-logo-2.png" />
+                <img class="clients__logo" src="/images/client-logo-2.png" />
               </li>
               <li class="clients__item">
-                <img src="/images/client-logo-3.png" />
+                <img class="clients__logo" src="/images/client-logo-3.png" />
               </li>
               <li class="clients__item">
-                <img src="/images/client-logo-4.png" />
+                <img class="clients__logo" src="/images/client-logo-4.png" />
               </li>
               <li class="clients__item">
-                <img src="/images/client-logo-5.png" />
+                <img class="clients__logo" src="/images/client-logo-5.png" />
               </li>
               <li class="clients__item">
-                <img src="/images/client-logo-6.png" />
+                <img class="clients__logo" src="/images/client-logo-6.png" />
               </li>
             </ul>
           </div>
-          <!-- Секция bunner -->
-          <div class="bunner">
-            <div class="bunner__img">
-              <img src="images/bunner_image.jpg" />
+          <!-- Секция banner -->
+          <div class="banner">
+            <div class="banner__media">
+              <img class="banner__image" src="images/bunner_image.jpg" alt="SEO optimization process" />
             </div>
-            <div class="bunner__info">
-              <h1 class="bunner__title">We go above and beyond to ensure successful SEO</h1>
-              <p class="bunner__text">
+            <div class="banner__content">
+              <h2 class="banner__title">We go above and beyond to ensure successful SEO</h2>
+              <p class="banner__text">
                 Lacus ac mollis vitae viverra. Tincidunt est, feugiat montes, viverra ullamcorper mi dui, nulla
                 pharetra. Sapien urna nullam elit diam mauris orci. Volutpat quam tempus justo, aliquam. Tortor ultrices
                 mattis eget orci eu nisi sed augue odio. Et senectus risus, pharetra, tristique libero. Dolor risus ac
@@ -203,7 +204,7 @@
           <div class="seo-services">
             <h2 class="seo-services__title">SEO services include</h2>
             <div class="seo-services__grid">
-              <div class="service-card">
+              <div class="seo-services__card service-card">
                 <div class="service-card__icon">
                   <img src="/images/seo-service__icon/service-icon-1.svg" />
                 </div>
@@ -212,7 +213,7 @@
                   Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
                 </p>
               </div>
-              <div class="service-card">
+              <div class="seo-services__card service-card">
                 <div class="service-card__icon">
                   <img src="/images/seo-service__icon/service-icon-2.svg" />
                 </div>
@@ -221,7 +222,7 @@
                   Nulla id egestas accumsan consequat tincidunt. Urna nisi, nec sed massa pharetra duis ut porttitor.
                 </p>
               </div>
-              <div class="service-card">
+              <div class="seo-services__card service-card">
                 <div class="service-card__icon">
                   <img src="/images/seo-service__icon/service-icon-3.svg" />
                 </div>
@@ -230,7 +231,7 @@
                   Congue viverra in quis urna lectus proin massa. Aliquam, justo nisl sed diam nibh vehicula.
                 </p>
               </div>
-              <div class="service-card">
+              <div class="seo-services__card service-card">
                 <div class="service-card__icon">
                   <img src="/images/seo-service__icon/service-icon-4.svg" />
                 </div>
@@ -239,7 +240,7 @@
                   Posuere sed quam etiam semper id id euismod. Feugiat cras donec elementum interdum in.
                 </p>
               </div>
-              <div class="service-card">
+              <div class="seo-services__card service-card">
                 <div class="service-card__icon">
                   <img src="/images/seo-service__icon/service-icon-5.svg" />
                 </div>
@@ -249,7 +250,7 @@
                   neque.
                 </p>
               </div>
-              <div class="service-card">
+              <div class="seo-services__card service-card">
                 <div class="service-card__icon">
                   <img src="/images/seo-service__icon/service-icon-6.svg" />
                 </div>
@@ -262,25 +263,27 @@
             </div>
           </div>
           <!-- Секция Get a Free SEO Analysis! -->
-          <div class="form_analysis">
-            <h1 class="analysis__title">Get a Free SEO Analysis!</h1>
-            <div class="analysis-form__fields">
-              <div class="analysis-form__field">
-                <label class="analysis-form__label">Name</label>
-                <input type="text" class="analysis-form__input" placeholder="Your name" />
+          <div class="analysis-form">
+            <h2 class="analysis-form__title">Get a Free SEO Analysis!</h2>
+            <form class="analysis-form__form">
+              <div class="analysis-form__fields">
+                <div class="analysis-form__field">
+                  <label class="analysis-form__label">Name</label>
+                  <input type="text" class="analysis-form__input" placeholder="Your name" />
+                </div>
+                <div class="analysis-form__field">
+                  <label class="analysis-form__label">Email</label>
+                  <input type="email" class="analysis-form__input" placeholder="Your working email" required />
+                </div>
+                <div class="analysis-form__field">
+                  <label class="analysis-form__label">Your website URL</label>
+                  <input type="url" class="analysis-form__input" placeholder="http://yoursite.com" required />
+                </div>
+                <div class="analysis-form__field">
+                  <button type="submit" class="analysis-form__button">Analyse your site</button>
+                </div>
               </div>
-              <div class="analysis-form__field">
-                <label class="analysis-form__label">Email</label>
-                <input type="email" class="analysis-form__input" placeholder="Your working email" required />
-              </div>
-              <div class="analysis-form__field">
-                <label class="analysis-form__label">Your website URL</label>
-                <input type="url" class="analysis-form__input" placeholder="http://yoursite.com" required />
-              </div>
-              <div class="analysis-form__field">
-                <button type="submit" class="analysis-form__button">Analyse your site</button>
-              </div>
-            </div>
+            </form>
           </div>
           <!-- Секция TIMELINE -->
           <div class="timeline">
@@ -293,9 +296,9 @@
                   </svg>
                 </div>
                 <div class="timeline__step-content">
-                  <div class="step__number">STEP 1</div>
-                  <div class="step__title">Off-Site SEO Analysis</div>
-                  <div class="step__desc">
+                  <div class="timeline__step-number">STEP 1</div>
+                  <div class="timeline__step-title">Off-Site SEO Analysis</div>
+                  <div class="timeline__step-desc">
                     Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa
                     neque.
                   </div>
@@ -304,9 +307,9 @@
 
               <div class="timeline__step timeline__step--left">
                 <div class="timeline__step-content">
-                  <div class="step__number">STEP 2</div>
-                  <div class="step__title">Technical SEO Optimizations</div>
-                  <div class="step__desc">
+                  <div class="timeline__step-number">STEP 2</div>
+                  <div class="timeline__step-title">Technical SEO Optimizations</div>
+                  <div class="timeline__step-desc">
                     Facilisis pellentesque quis accumsan ultricies. Eu egestas eget feugiat lacus, amet, sollicitudin
                     egestas laoreet etiam. Nunc nisl orci auctor et fames. Vestibulum viverra faucibus faucibus et
                     convallis.
@@ -325,9 +328,9 @@
                   </svg>
                 </div>
                 <div class="timeline__step-content">
-                  <div class="step__number">STEP 3</div>
-                  <div class="step__title">Usability Check</div>
-                  <div class="step__desc">
+                  <div class="timeline__step-number">STEP 3</div>
+                  <div class="timeline__step-title">Usability Check</div>
+                  <div class="timeline__step-desc">
                     Eget amet, enim pharetra leo egestas nisi, odio imperdiet facilisis. Aliquet orci varius volutpat
                     egestas facilisi lobortis. Varius praesent pretium in leo, accumsan, in ultricies.
                   </div>
@@ -335,9 +338,9 @@
               </div>
               <div class="timeline__step timeline__step--left">
                 <div class="timeline__step-content">
-                  <div class="step__number">STEP 4</div>
-                  <div class="step__title">Content Marketing</div>
-                  <div class="step__desc">
+                  <div class="timeline__step-number">STEP 4</div>
+                  <div class="timeline__step-title">Content Marketing</div>
+                  <div class="timeline__step-desc">
                     Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor. Faucibus in leo,
                     nulla odio nulla imperdiet quis faucibus neque.
                   </div>
@@ -354,220 +357,224 @@
           <div class="pricing">
             <h2 class="pricing__title">Flexible pricing plans</h2>
 
+            <div class="pricing__toggle">
+              <button class="pricing__toggle-btn pricing__toggle-btn--active" data-period="monthly">Monthly</button>
+              <button class="pricing__toggle-btn" data-period="yearly">
+                Yearly <span class="pricing__toggle-discount">-12% Off</span>
+              </button>
+            </div>
+
             <div class="pricing__plans">
-              <div class="pricing-card">
+              <div class="pricing__plan pricing-card">
                 <h3 class="pricing-card__title">Basic</h3>
-                <span class="pricing-card__price">
+                <div class="pricing-card__price">
                   $24
-                  <span class="pricing-card__price-small">/mon</span>
-                </span>
-                <img src="images/decor__divider-line.svg" alt="line" aria-hidden="true" class="pricing-card__line" />
-                <ul class="pricing-card__list">
-                  <li class="pricing-card__item">Advanced Analytics</li>
-                  <li class="pricing-card__item">Change Management</li>
-                  <li class="pricing-card__item">Corporate Finance</li>
-                  <li class="pricing-card__item">One Way Link Building</li>
-                  <li class="pricing-card__item">Social Media Marketing</li>
-                  <li class="pricing-card__item">Strategy & Marketing</li>
-                  <li class="pricing-card__item">Information Technology</li>
+                  <span class="pricing-card__period">/mon</span>
+                </div>
+                <img src="images/decor__divider-line.svg" alt="" class="pricing-card__divider" />
+                <ul class="pricing-card__features">
+                  <li class="pricing-card__feature">Advanced Analytics</li>
+                  <li class="pricing-card__feature">Change Management</li>
+                  <li class="pricing-card__feature">Corporate Finance</li>
+                  <li class="pricing-card__feature">One Way Link Building</li>
+                  <li class="pricing-card__feature">Social Media Marketing</li>
+                  <li class="pricing-card__feature">Strategy & Marketing</li>
+                  <li class="pricing-card__feature">Information Technology</li>
                 </ul>
-                <a href="#" class="pricing-card__btn pricing-card__btn--outline">Choose plan</a>
+                <button class="pricing-card__button pricing-card__button--outline">Choose plan</button>
               </div>
 
-              <div class="pricing-card pricing-card--featured">
+              <div class="pricing__plan pricing-card pricing-card--featured">
                 <h3 class="pricing-card__title">Optimal</h3>
-                <span class="pricing-card__price">
+                <div class="pricing-card__price">
                   $64
-                  <span class="pricing-card__price-small">/mon</span>
-                </span>
-                <img src="images/decor__divider-line.svg" alt="line" aria-hidden="true" class="pricing-card__line" />
-                <ul class="pricing-card__list">
-                  <li class="pricing-card__item">Advanced Analytics</li>
-                  <li class="pricing-card__item">Change Management</li>
-                  <li class="pricing-card__item">Corporate Finance</li>
-                  <li class="pricing-card__item">One Way Link Building</li>
-                  <li class="pricing-card__item">Social Media Marketing</li>
-                  <li class="pricing-card__item">Strategy & Marketing</li>
-                  <li class="pricing-card__item">Information Technology</li>
+                  <span class="pricing-card__period">/mon</span>
+                </div>
+                <img src="images/decor__divider-line.svg" alt="" class="pricing-card__divider" />
+                <ul class="pricing-card__features">
+                  <li class="pricing-card__feature">Advanced Analytics</li>
+                  <li class="pricing-card__feature">Change Management</li>
+                  <li class="pricing-card__feature">Corporate Finance</li>
+                  <li class="pricing-card__feature">One Way Link Building</li>
+                  <li class="pricing-card__feature">Social Media Marketing</li>
+                  <li class="pricing-card__feature">Strategy & Marketing</li>
+                  <li class="pricing-card__feature">Information Technology</li>
                 </ul>
-                <a href="#" class="pricing-card__btn pricing-card__btn--primary">Choose plan</a>
+                <button class="pricing-card__button pricing-card__button--primary">Choose plan</button>
               </div>
 
-              <div class="pricing-card">
+              <div class="pricing__plan pricing-card">
                 <h3 class="pricing-card__title">Premium</h3>
-                <span class="pricing-card__price">
+                <div class="pricing-card__price">
                   $98
-                  <span class="pricing-card__price-small">/mon</span>
-                </span>
-                <img src="images/decor__divider-line.svg" alt="line" aria-hidden="true" class="pricing-card__line" />
-                <ul class="pricing-card__list">
-                  <li class="pricing-card__item">Advanced Analytics</li>
-                  <li class="pricing-card__item">Change Management</li>
-                  <li class="pricing-card__item">Corporate Finance</li>
-                  <li class="pricing-card__item">One Way Link Building</li>
-                  <li class="pricing-card__item">Social Media Marketing</li>
-                  <li class="pricing-card__item">Strategy & Marketing</li>
-                  <li class="pricing-card__item">Information Technology</li>
+                  <span class="pricing-card__period">/mon</span>
+                </div>
+                <img src="images/decor__divider-line.svg" alt="" class="pricing-card__divider" />
+                <ul class="pricing-card__features">
+                  <li class="pricing-card__feature">Advanced Analytics</li>
+                  <li class="pricing-card__feature">Change Management</li>
+                  <li class="pricing-card__feature">Corporate Finance</li>
+                  <li class="pricing-card__feature">One Way Link Building</li>
+                  <li class="pricing-card__feature">Social Media Marketing</li>
+                  <li class="pricing-card__feature">Strategy & Marketing</li>
+                  <li class="pricing-card__feature">Information Technology</li>
                 </ul>
-                <a href="#" class="pricing-card__btn pricing-card__btn--outline">Choose plan</a>
+                <button class="pricing-card__button pricing-card__button--outline">Choose plan</button>
               </div>
             </div>
           </div>
         </div>
         <!-- Секция Case studies-->
-        <div class="case_studies">
+
+        <div class="case-studies">
           <div class="container">
-            <h2 class="case_studies__title">Related case studies</h2>
-            <div class="case_studies__toggle">
-              <button class="case_studies__toggle-btn active" data-side="left">Monthly</button>
-              <button class="case_studies__toggle-btn" data-side="right">
-                Yearly <span class="case_studies__toggle-off">-12% Off</span>
-              </button>
-            </div>
+            <h2 class="case-studies__title">Related case studies</h2>
 
-            <div class="case_studies__studies">
-              <dix class="case_studies__card">
-                <img class="studies-card__logo" src="/images/case_studies/client-logo-national.svg" />
-                <h3 class="studies-card__title">Charity organisation</h3>
-
+            <div class="case-studies__items">
+              <div class="case-studies__card study-card">
                 <img
-                  src="/images/case_studies/divider.svg"
-                  alt="divider"
-                  aria-hidden="true"
-                  class="studies-card__divider"
+                  class="study-card__logo"
+                  src="/images/case_studies/client-logo-national.svg"
+                  alt="National company"
                 />
-                <p class="studies-card__text">
+                <h3 class="study-card__title">Charity organisation</h3>
+                <img src="/images/case_studies/divider.svg" alt="" class="study-card__divider" />
+                <p class="study-card__text">
                   Createx SEO Agency helped National Inc. increase their MQL to SQL conversion rate by 300%.
                 </p>
-                <ul class="features_list">
-                  <li class="features_list-item">
-                    <img class="features_list-item-svg" src="/images/case_studies/img_90procent.svg" />
-                    <span class="features_list-item-procent">90%</span>
-                    <span class="features_list-item-text">Engagement</span>
+                <ul class="study-card__features">
+                  <li class="study-card__feature">
+                    <img class="study-card__feature-icon" src="/images/case_studies/img_90procent.svg" alt="" />
+                    <span class="study-card__feature-value">90%</span>
+                    <span class="study-card__feature-label">Engagement</span>
                   </li>
-                  <li class="features_list-item">
-                    <img class="features_list-item-svg" src="/images/case_studies/img_100procent.svg" />
-                    <span class="features_list-item-procent">100%</span>
-                    <span class="features_list-item-text">Deliverability</span>
+                  <li class="study-card__feature">
+                    <img class="study-card__feature-icon" src="/images/case_studies/img_100procent.svg" alt="" />
+                    <span class="study-card__feature-value">100%</span>
+                    <span class="study-card__feature-label">Deliverability</span>
                   </li>
                 </ul>
-              </dix>
-              <dix class="case_studies__card">
-                <img class="studies-card__logo" src="/images/case_studies/client-logo-strategy.svg" />
-                <h3 class="studies-card__title">Oil and natural resources</h3>
+              </div>
+
+              <div class="case-studies__card study-card">
                 <img
-                  src="/images/case_studies/divider.svg"
-                  alt="divider"
-                  aria-hidden="true"
-                  class="studies-card__divider"
+                  class="study-card__logo"
+                  src="/images/case_studies/client-logo-strategy.svg"
+                  alt="Strategy company"
                 />
-                <p class="studies-card__text">
+                <h3 class="study-card__title">Oil and natural resources</h3>
+                <img src="/images/case_studies/divider.svg" alt="" class="study-card__divider" />
+                <p class="study-card__text">
                   With an advanced A/B testing and usability analysis, Createx SEO Agency helps Del Mar see a 400%
                   increase in conversion rate.
                 </p>
-                <ul class="features_list">
-                  <li class="features_list-item">
-                    <img class="features_list-item-svg" src="/images/case_studies/img_200procent.svg" />
-                    <span class="features_list-item-procent">20%</span>
-                    <span class="features_list-item-text">Growth in sales</span>
+                <ul class="study-card__features">
+                  <li class="study-card__feature">
+                    <img class="study-card__feature-icon" src="/images/case_studies/img_200procent.svg" alt="" />
+                    <span class="study-card__feature-value">20%</span>
+                    <span class="study-card__feature-label">Growth in sales</span>
                   </li>
-                  <li class="features_list-item features_list-item--no-icon">
-                    <span class="features_list-item-procent">1400</span>
-                    <span class="features_list-item-text">Target investors</span>
+                  <li class="study-card__feature study-card__feature--no-icon">
+                    <span class="study-card__feature-value">1400</span>
+                    <span class="study-card__feature-label">Target investors</span>
                   </li>
                 </ul>
-              </dix>
-              <dix class="case_studies__card">
-                <img class="studies-card__logo" src="/images/case_studies/client-logo-sunset.svg" />
-                <h3 class="studies-card__title">Personal care</h3>
-                <img
-                  src="/images/case_studies/divider.svg"
-                  alt="divider"
-                  aria-hidden="true"
-                  class="studies-card__divider"
-                />
-                <p class="studies-card__text">
+              </div>
+
+              <div class="case-studies__card study-card">
+                <img class="study-card__logo" src="/images/case_studies/client-logo-sunset.svg" alt="Sunset company" />
+                <h3 class="study-card__title">Personal care</h3>
+                <img src="/images/case_studies/divider.svg" alt="" class="study-card__divider" />
+                <p class="study-card__text">
                   We helped Sunset company break through a noisy industry and better understand their buyer's journey.
                 </p>
-                <ul class="features_list">
-                  <li class="features_list-item">
-                    <img class="features_list-item-svg" src="/images/case_studies/img_70procent.svg" />
-                    <span class="features_list-item-procent">70%</span>
-                    <span class="features_list-item-text">Open Rate</span>
+                <ul class="study-card__features">
+                  <li class="study-card__feature">
+                    <img class="study-card__feature-icon" src="/images/case_studies/img_70procent.svg" alt="" />
+                    <span class="study-card__feature-value">70%</span>
+                    <span class="study-card__feature-label">Open Rate</span>
                   </li>
-                  <li class="features_list-item">
-                    <img class="features_list-item-svg" src="/images/case_studies/img_200procent_orange.svg" />
-                    <span class="features_list-item-procent">200%</span>
-                    <span class="features_list-item-text">Growth in sales</span>
+                  <li class="study-card__feature">
+                    <img class="study-card__feature-icon" src="/images/case_studies/img_200procent_orange.svg" alt="" />
+                    <span class="study-card__feature-value">200%</span>
+                    <span class="study-card__feature-label">Growth in sales</span>
                   </li>
                 </ul>
-              </dix>
-            </div>
-            <div class="case_studies__cta">
-              <div class="case_studies__text-field">
-                <span class="case_studies__cta-text">Explore more our clients' case studies</span>
               </div>
-              <button class="case_studies__cta-button">View all case studies</button>
+            </div>
+
+            <div class="case-studies__cta">
+              <p class="case-studies__cta-text">Explore more our clients' case studies</p>
+              <button class="case-studies__cta-button button">View all case studies</button>
             </div>
           </div>
         </div>
+        <!-- Other services -->
         <div class="container">
-          <!--Other services-->
-          <div class="other_services">
-            <h1 class="other_services__title">Other services</h1>
-            <div class="other_services__tabl">
-              <div class="other_services__tabl-nav">
-                <button class="tabl-nav__btn tabl-nav__btn--active" data-tab="social">Social Media</button>
-                <button class="tabl-nav__btn" data-tab="seo">SEO</button>
-                <button class="tabl-nav__btn" data-tab="research">Research</button>
-                <button class="tabl-nav__btn" data-tab="content">Content & PR</button>
-                <button class="tabl-nav__btn" data-tab="traffic">Payed Traffic</button>
+          <div class="other-services">
+            <h2 class="other-services__title">Other services</h2>
+
+            <div class="other-services__tabs">
+              <div class="other-services__nav services-nav">
+                <button class="services-nav__btn services-nav__btn--active" data-tab="social">Social Media</button>
+                <button class="services-nav__btn" data-tab="seo">SEO</button>
+                <button class="services-nav__btn" data-tab="research">Research</button>
+                <button class="services-nav__btn" data-tab="content">Content & PR</button>
+                <button class="services-nav__btn" data-tab="traffic">Payed Traffic</button>
               </div>
-              <div class="other_services__tabl-content">
+
+              <div class="other-services__content">
                 <!-- Social Media Tab -->
-                <div class="tabl-content__item tabl-content__item--active" id="social-tab">
-                  <div class="tabl-content__info">
-                    <h3 class="tabl-content__title">Complete Worflow For Any SEO Professional</h3>
-                    <ul class="tabl-content__list">
-                      <li class="tabl-content__list-item">Aenean enim tellus morbi nisl vulputate dictumst.</li>
-                      <li class="tabl-content__list-item">Nibh sapien volutpat lacus augue.</li>
-                      <li class="tabl-content__list-item">Vel in amet, placerat adipiscing est pharetra.</li>
-                      <li class="tabl-content__list-item">Gravida ornare sit in et ut sit sem id.</li>
-                      <li class="tabl-content__list-item">Ultrices pellentesque dictum enim egestas ac diam.</li>
-                      <li class="tabl-content__list-item">Sit semper enim senectus integer ut turpis et.</li>
+                <div class="other-services__tab other-services__tab--active" id="social-tab">
+                  <div class="other-services__tab-info">
+                    <h3 class="other-services__tab-title">Complete Workflow For Any SEO Professional</h3>
+                    <ul class="other-services__tab-list">
+                      <li class="other-services__tab-item">Aenean enim tellus morbi nisl vulputate dictumst.</li>
+                      <li class="other-services__tab-item">Nibh sapien volutpat lacus augue.</li>
+                      <li class="other-services__tab-item">Vel in amet, placerat adipiscing est pharetra.</li>
+                      <li class="other-services__tab-item">Gravida ornare sit in et ut sit sem id.</li>
+                      <li class="other-services__tab-item">Ultrices pellentesque dictum enim egestas ac diam.</li>
+                      <li class="other-services__tab-item">Sit semper enim senectus integer ut turpis et.</li>
                     </ul>
-                    <div class="tabl-content__actions">
-                      <button class="tabl-content__btn tabl-content__btn--primary">Learn more</button>
-                      <button class="tabl-content__btn tabl-content__btn--secondary">Try SEO toolkit</button>
+                    <div class="other-services__tab-actions">
+                      <button class="other-services__tab-btn other-services__tab-btn--primary button">
+                        Learn more
+                      </button>
+                      <button class="other-services__tab-btn other-services__tab-btn--secondary button">
+                        Try SEO toolkit
+                      </button>
                     </div>
                   </div>
-                  <div class="tabl-content__image">
-                    <img src="/images/social_media.svg" alt="Social Media" />
+                  <div class="other-services__tab-media">
+                    <img class="other-services__tab-image" src="/images/social_media.svg" alt="Social Media" />
                   </div>
                 </div>
 
-                <!-- Остальные табы (пока пустые) -->
-                <div class="tabl-content__item" id="seo-tab">
-                  <div class="tabl-content__info">
-                    <h3 class="tabl-content__title">SEO</h3>
+                <!-- Остальные табы -->
+                <div class="other-services__tab" id="seo-tab">
+                  <div class="other-services__tab-info">
+                    <h3 class="other-services__tab-title">SEO</h3>
                     <p>SEO content coming soon...</p>
                   </div>
                 </div>
-                <div class="tabl-content__item" id="research-tab">
-                  <div class="tabl-content__info">
-                    <h3 class="tabl-content__title">Research</h3>
+
+                <div class="other-services__tab" id="research-tab">
+                  <div class="other-services__tab-info">
+                    <h3 class="other-services__tab-title">Research</h3>
                     <p>Research content coming soon...</p>
                   </div>
                 </div>
-                <div class="tabl-content__item" id="content-tab">
-                  <div class="tabl-content__info">
-                    <h3 class="tabl-content__title">Content & PR</h3>
+
+                <div class="other-services__tab" id="content-tab">
+                  <div class="other-services__tab-info">
+                    <h3 class="other-services__tab-title">Content & PR</h3>
                     <p>Content & PR content coming soon...</p>
                   </div>
                 </div>
-                <div class="tabl-content__item" id="traffic-tab">
-                  <div class="tabl-content__info">
-                    <h3 class="tabl-content__title">Payed Traffic</h3>
+
+                <div class="other-services__tab" id="traffic-tab">
+                  <div class="other-services__tab-info">
+                    <h3 class="other-services__tab-title">Payed Traffic</h3>
                     <p>Payed Traffic content coming soon...</p>
                   </div>
                 </div>
@@ -576,8 +583,8 @@
           </div>
         </div>
       </div>
-      <footer class="page__footer">
-        <div class="footer__container container">
+      <footer class="page__footer footer">
+        <div class="container">
           <div class="footer__top">
             <div class="footer__info">
               <a href="#" class="footer__logo">
@@ -719,47 +726,53 @@
     </div>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        const tabButtons = document.querySelectorAll('.tabl-nav__btn');
-        const tabItems = document.querySelectorAll('.tabl-content__item');
+        const tabButtons = document.querySelectorAll('.services-nav__btn');
+        const tabItems = document.querySelectorAll('.other-services__tab');
 
         tabButtons.forEach((button) => {
           button.addEventListener('click', function () {
             const tabId = this.getAttribute('data-tab');
 
             // Убираем активный класс у всех кнопок
-            tabButtons.forEach((btn) => btn.classList.remove('tabl-nav__btn--active'));
+            tabButtons.forEach((btn) => btn.classList.remove('services-nav__btn--active'));
             // Добавляем активный класс текущей кнопке
-            this.classList.add('tabl-nav__btn--active');
+            this.classList.add('services-nav__btn--active');
 
             // Скрываем все табы
             tabItems.forEach((item) => {
-              item.classList.remove('tabl-content__item--active');
-              item.style.display = 'none';
+              item.classList.remove('other-services__tab--active');
             });
 
             // Показываем выбранный таб
             const activeTab = document.getElementById(`${tabId}-tab`);
             if (activeTab) {
-              activeTab.classList.add('tabl-content__item--active');
-              activeTab.style.display = 'grid';
+              activeTab.classList.add('other-services__tab--active');
             }
           });
         });
       });
     </script>
     <script>
-      const toggle = document.querySelector('.case_studies__toggle');
-      const buttons = document.querySelectorAll('.case_studies__toggle-btn');
+      const pricingToggle = document.querySelector('.pricing__toggle');
+      const pricingButtons = document.querySelectorAll('.pricing__toggle-btn');
+      const pricingCards = document.querySelectorAll('.pricing-card');
 
-      buttons.forEach((btn) => {
+      pricingButtons.forEach((btn) => {
         btn.addEventListener('click', () => {
-          buttons.forEach((b) => b.classList.remove('active'));
-          btn.classList.add('active');
+          // Убираем активный класс у всех кнопок
+          pricingButtons.forEach((b) => b.classList.remove('pricing__toggle-btn--active'));
+          // Добавляем активный класс текущей кнопке
+          btn.classList.add('pricing__toggle-btn--active');
 
-          if (btn.dataset.side === 'right') {
-            toggle.classList.add('right-active');
+          // Переключаем позицию фона
+          if (btn.dataset.period === 'yearly') {
+            pricingToggle.classList.add('right-active');
+            // Скрываем все карточки (пока нет yearly планов)
+            pricingCards.forEach((card) => (card.style.display = 'none'));
           } else {
-            toggle.classList.remove('right-active');
+            pricingToggle.classList.remove('right-active');
+            // Показываем все карточки (monthly планы)
+            pricingCards.forEach((card) => (card.style.display = 'block'));
           }
         });
       });

@@ -1,0 +1,146 @@
+.other-services {
+  padding-top: 120px;
+  padding-bottom: 83px;
+}
+
+.other-services__title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--text-primary);
+  padding-bottom: 40px;
+}
+
+.other-services__nav {
+  display: flex;
+  flex-grow: 1;
+  margin-bottom: 60px;
+}
+
+.other-services__content {
+  /* Стили для контейнера контента */
+}
+
+.other-services__tab {
+  display: none;
+}
+
+.other-services__tab--active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 140px;
+}
+
+.other-services__tab-info {
+  /* Стили для информационной части таба */
+}
+
+.other-services__tab-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.other-services__tab-list {
+  list-style: none;
+  margin-bottom: 48px;
+}
+
+.other-services__tab-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--text-primary);
+  padding-bottom: 12px;
+  position: relative;
+  padding-left: 28px;
+  align-items: flex-start;
+  opacity: 0.85;
+}
+
+.other-services__tab-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url('/images/icon__check.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.other-services__tab-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.other-services__tab-btn {
+  padding: 12px 32px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.other-services__tab-btn--primary {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  background: transparent;
+}
+
+.other-services__tab-btn--primary:hover {
+  color: var(--color-white);
+  background: var(--primary);
+}
+
+.other-services__tab-btn--secondary {
+  color: var(--color-white);
+  border: 1px solid var(--primary);
+  background: var(--primary);
+}
+
+.other-services__tab-btn--secondary:hover {
+  background: transparent;
+  color: var(--primary);
+}
+
+.other-services__tab-media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.other-services__tab-image {
+  min-width: 700px;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.other-services__tab-media::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background-image: url('/images/bg-shape.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 1;
+  opacity: 0.6;
+  pointer-events: none;
+}
