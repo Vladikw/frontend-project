@@ -13,6 +13,10 @@
   .clients__list {
     gap: 50px;
   }
+
+  .clients {
+    padding-top: 60px;
+  }
 }
 
 @media (width <= 767px) {
@@ -23,5 +27,9 @@
 
   .clients__item {
     flex: 0 0 calc(33.3% - 20px); /* 3 логотипа в ряд */
+  }
+
+  .clients {
+    padding-top: 40px;
   }
 }
