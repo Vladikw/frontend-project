@@ -3,7 +3,6 @@
 }
 
 .seo-services__title {
-  font-family: Lato, sans-serif;
   font-weight: 900;
   font-size: 46px;
   line-height: 130%;
@@ -17,7 +16,6 @@
   padding-top: 60px;
 }
 
-/* Стили для элемента-микса seo-services__card */
 .seo-services__card {
   border-right: 1px solid;
   border-bottom: 1px solid;
@@ -45,4 +43,104 @@
 .seo-services__card:nth-last-child(-n + 3) {
   padding-bottom: 0;
   border-bottom: none;
+}
+
+@media (width <= 1023px) {
+  .seo-services {
+    padding: 60px 0 80px;
+  }
+
+  .seo-services__title {
+    font-size: 36px;
+  }
+
+  .seo-services__grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 40px;
+  }
+
+  .seo-services__card {
+    padding: 32px 60px;
+  }
+
+  /* СБРОС правил для 3 колонок */
+  .seo-services__card:nth-child(3n + 1) {
+    padding-left: 60px;
+  }
+
+  .seo-services__card:nth-child(3n) {
+    padding-right: 60px;
+    border-right: 1px solid;
+  }
+
+  .seo-services__card:nth-child(-n + 3) {
+    padding-top: 32px;
+  }
+
+  .seo-services__card:nth-last-child(-n + 3) {
+    padding-bottom: 32px;
+    border-bottom: 1px solid;
+  }
+
+  /* НОВЫЕ правила для 2 колонок */
+  .seo-services__card:nth-child(2n + 1) {
+    padding-left: 0;
+  }
+
+  .seo-services__card:nth-child(2n) {
+    padding-right: 0;
+    border-right: none;
+  }
+
+  .seo-services__card:nth-child(-n + 2) {
+    padding-top: 0;
+  }
+
+  .seo-services__card:nth-last-child(-n + 2) {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+/* Мобильные */
+@media (width <= 767px) {
+  .seo-services {
+    padding: 40px 0 60px;
+  }
+
+  .seo-services__title {
+    font-size: 28px;
+  }
+
+  .seo-services__grid {
+    grid-template-columns: 1fr;
+    padding-top: 32px;
+  }
+
+  .seo-services__card {
+    padding: 24px 32px;
+    border-right: none;
+    border-bottom: 1px solid;
+  }
+
+  /* Убираем  старые правила отступов */
+  .seo-services__card:nth-child(n) {
+    padding: 24px 32px !important;
+    border-right: none !important;
+  }
+
+  /* Первая карточка - без верхнего отступа */
+  .seo-services__card:first-child {
+    padding-top: 0;
+  }
+
+  /* Последняя карточка - без нижней границы */
+  .seo-services__card:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .seo-services__card:not(:last-child) {
+    border-bottom: 1px solid;
+  }
 }

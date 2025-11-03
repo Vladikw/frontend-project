@@ -146,3 +146,17 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgb(119 114 241 / 30%);
 }
+
+@media (width <= 1023px) {
+  .pricing-card__features {
+    display: grid;
+    justify-content: center;
+  }
+}
+
+@media (width <= 767px) {
+  .pricing-card__features {
+    padding: 18px 50px;
+    gap: 5px;
+  }
+}

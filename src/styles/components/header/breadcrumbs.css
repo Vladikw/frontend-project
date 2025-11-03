@@ -39,3 +39,9 @@
   align-items: center;
   color: var(--text-inverse-secondary);
 }
+
+@media (width <= 1023px) {
+  .breadcrumbs {
+    padding-top: 60px;
+  }
+}

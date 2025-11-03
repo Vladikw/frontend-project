@@ -8,3 +8,20 @@
   gap: 102px;
   flex-wrap: wrap;
 }
+
+@media (width <= 1023px) {
+  .clients__list {
+    gap: 50px;
+  }
+}
+
+@media (width <= 767px) {
+  .clients__list {
+    gap: 30px;
+    row-gap: 20px;
+  }
+
+  .clients__item {
+    flex: 0 0 calc(33.3% - 20px); /* 3 логотипа в ряд */
+  }
+}

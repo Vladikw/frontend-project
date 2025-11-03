@@ -80,3 +80,44 @@
   transform: translateY(-1px);
   box-shadow: 0 2px 6px rgb(255 255 255 / 30%);
 }
+
+@media (width <= 1023px) {
+  .analysis-form__title {
+    font-size: 28px;
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+
+  .analysis-form__fields {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 40px 40px;
+  }
+
+  .analysis-form__button {
+    grid-column: span 2; /* Кнопка на всю ширину */
+  }
+}
+
+@media (width <= 767px) {
+  .analysis-form__title {
+    font-size: 24px;
+    padding: 32px 20px 20px;
+  }
+
+  .analysis-form__fields {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 20px 32px;
+  }
+
+  .analysis-form__button {
+    grid-column: span 1;
+    margin-top: 8px;
+    height: 48px;
+  }
+
+  .analysis-form__input {
+    height: 48px;
+  }
+}

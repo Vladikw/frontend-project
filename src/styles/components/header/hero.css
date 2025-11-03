@@ -33,3 +33,13 @@
   color: var(--text-inverse-secondary);
   padding-bottom: 40px;
 }
+
+@media (width <= 1023px) {
+  .hero__title {
+    font-size: 44px;
+  }
+
+  .hero__subtitle {
+    font-size: 15px;
+  }
+}

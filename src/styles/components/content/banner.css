@@ -36,3 +36,42 @@
   line-height: 160%;
   color: var(--text-secondary);
 }
+
+@media (width <= 1023px) {
+  .banner {
+    padding: 50px 0;
+    gap: 24px;
+  }
+
+  .banner__content {
+    width: 80%;
+    padding-left: 30px;
+  }
+
+  .banner__title {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (width <= 767px) {
+  .banner {
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 24px;
+  }
+
+  .banner__content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .banner__title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .banner__text {
+    text-align: center;
+  }
+}

@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1230px;
+
+  /* max-width: 1230px; */
   padding: 0 16px;
   padding-top: 20px;
   flex-wrap: nowrap;
@@ -76,4 +77,46 @@
 
 .nav__item {
   position: relative;
+}
+
+@media (width <= 1023px) {
+  .nav {
+    gap: 10px;
+  }
+
+  .nav__list {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav__logo {
+    padding-right: 20px;
+  }
+
+  .nav__btn {
+    min-width: 120px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+@media (width <= 767px) {
+  .nav {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .nav__btn {
+    min-width: 130px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
 }
