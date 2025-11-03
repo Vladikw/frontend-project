@@ -102,6 +102,10 @@
     width: 200px;
     height: 44px;
   }
+
+  .case-studies__title {
+    font-size: 36px;
+  }
 }
 
 @media (width <= 767px) {
@@ -112,5 +116,9 @@
   .case-studies__cta-button {
     width: 100%;
     max-width: 280px;
+  }
+
+  .case-studies__title {
+    font-size: 28px;
   }
 }

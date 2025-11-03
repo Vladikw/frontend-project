@@ -25,3 +25,15 @@
   background: url('images/heart.svg') no-repeat center;
   background-size: contain;
 }
+
+@media (width <= 1023px) {
+  .footer__copyright {
+    padding-left: 30px;
+  }
+}
+
+@media (width <= 767px) {
+  .footer__copyright {
+    padding-left: 20px;
+  }
+}
