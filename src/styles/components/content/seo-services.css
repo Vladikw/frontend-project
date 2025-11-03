@@ -17,8 +17,8 @@
 }
 
 .seo-services__card {
-  border-right: 1px solid;
-  border-bottom: 1px solid;
+  border-right: 1px solid rgb(0 0 0 / 20%);
+  border-bottom: 1px solid rgb(0 0 0 / 20%);
   padding: 40px 94px;
   box-sizing: border-box;
 }
@@ -70,7 +70,7 @@
 
   .seo-services__card:nth-child(3n) {
     padding-right: 60px;
-    border-right: 1px solid;
+    border-right: 1px solid rgb(0 0 0 / 20%);
   }
 
   .seo-services__card:nth-child(-n + 3) {
@@ -79,7 +79,7 @@
 
   .seo-services__card:nth-last-child(-n + 3) {
     padding-bottom: 32px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgb(0 0 0 / 20%);
   }
 
   /* НОВЫЕ правила для 2 колонок */
@@ -120,7 +120,7 @@
   .seo-services__card {
     padding: 24px 32px;
     border-right: none;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgb(0 0 0 / 20%);
   }
 
   /* Убираем  старые правила отступов */
@@ -141,6 +141,6 @@
   }
 
   .seo-services__card:not(:last-child) {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgb(0 0 0 / 20%);
   }
 }

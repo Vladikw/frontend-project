@@ -83,7 +83,7 @@
 
 @media (width <= 1023px) {
   .analysis-form__title {
-    font-size: 28px;
+    font-size: 36px;
     padding-top: 40px;
     padding-bottom: 24px;
   }
@@ -101,7 +101,7 @@
 
 @media (width <= 767px) {
   .analysis-form__title {
-    font-size: 24px;
+    font-size: 28px;
     padding: 32px 20px 20px;
   }
 
