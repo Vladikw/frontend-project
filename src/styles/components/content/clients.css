@@ -1,35 +1,40 @@
 .clients {
-  padding-top: 90px;
+  padding-top: 40px;
 }
 
 .clients__list {
   display: flex;
   justify-content: center;
-  gap: 102px;
+  gap: 30px;
+  row-gap: 20px;
   flex-wrap: wrap;
 }
 
-@media (width <= 1023px) {
-  .clients__list {
-    gap: 50px;
-  }
+.clients__item {
+  flex: 0 0 calc(33.3% - 20px);
+}
 
+@media (--md-viewport) {
   .clients {
     padding-top: 60px;
   }
-}
 
-@media (width <= 767px) {
   .clients__list {
-    gap: 30px;
-    row-gap: 20px;
+    gap: 50px;
+    row-gap: 30px;
   }
 
   .clients__item {
-    flex: 0 0 calc(33.3% - 20px); /* 3 логотипа в ряд */
+    flex: 0 0 auto;
+  }
+}
+
+@media (--lg-viewport) {
+  .clients {
+    padding-top: 90px;
   }
 
-  .clients {
-    padding-top: 40px;
+  .clients__list {
+    gap: 102px;
   }
 }

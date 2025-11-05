@@ -9,6 +9,7 @@
   font-size: 12px;
   line-height: 150%;
   color: var(--text-inverse);
+  padding-left: 20px;
 }
 
 .footer__copyright-heart {
@@ -26,14 +27,14 @@
   background-size: contain;
 }
 
-@media (width <= 1023px) {
+@media (--md-viewport) {
   .footer__copyright {
     padding-left: 30px;
   }
 }
 
-@media (width <= 767px) {
+@media (--lg-viewport) {
   .footer__copyright {
-    padding-left: 20px;
+    padding-left: 0;
   }
 }

@@ -1,8 +1,8 @@
 .footer__top {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  align-items: start;
-  gap: 80px;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  padding: 0 20px;
 }
 
 .footer__info {
@@ -12,13 +12,13 @@
 
 .footer__logo {
   align-self: flex-start;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .footer__description {
-  max-width: 285px;
+  max-width: 100%;
   padding-top: 24px;
-  padding-bottom: 38px;
+  padding-bottom: 24px;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
@@ -46,7 +46,8 @@
 
 .footer__nav {
   display: flex;
-  gap: 80px;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .footer__nav-column,
@@ -65,6 +66,7 @@
   line-height: 150%;
   letter-spacing: 0.06em;
   color: var(--text-inverse);
+  padding-top: 0;
 }
 
 .footer__nav-list,
@@ -98,7 +100,7 @@
   background: rgb(255 255 255 / 12%);
   border: 1px solid rgb(255 255 255 / 20%);
   border-radius: 4px;
-  width: fit-content;
+  width: 100%;
   padding-right: 8px;
 }
 
@@ -107,7 +109,8 @@
   border: 1px solid transparent;
   color: var(--text-inverse);
   padding: 8px 12px;
-  width: 256px;
+  width: 100%;
+  flex-grow: 1;
 }
 
 .footer__form-input:focus,
@@ -140,20 +143,20 @@
 
 .footer__awards {
   display: flex;
-  justify-content: left;
-  gap: 24px;
-  padding: 40px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 24px 20px;
   border-top: 1px solid rgb(255 255 255 / 60%);
 }
 
-/* Контейнер внутри футера */
 .page__footer .container {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 40px;
 }
 
-@media (width <= 1023px) {
+@media (--md-viewport) {
   .footer__top {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -166,8 +169,8 @@
   }
 
   .footer__nav {
+    flex-flow: row wrap;
     gap: 40px;
-    flex-wrap: wrap;
   }
 
   .footer__form-input {
@@ -176,7 +179,6 @@
 
   .footer__awards {
     justify-content: center;
-    flex-wrap: wrap;
     gap: 16px;
   }
 
@@ -187,34 +189,57 @@
   .footer__logo {
     padding-top: 50px;
   }
+
+  .footer__nav-title,
+  .footer__contacts-title,
+  .footer__subscribe-title {
+    padding-top: 0;
+  }
 }
 
-@media (width <= 767px) {
+@media (--lg-viewport) {
   .footer__top {
-    gap: 32px;
-    padding: 0 20px;
+    grid-template-columns: 1fr 3fr;
+    align-items: start;
+    gap: 80px;
+    padding: 0;
+  }
+
+  .footer__description {
+    max-width: 285px;
+    padding-bottom: 38px;
   }
 
   .footer__nav {
-    flex-direction: column;
-    gap: 24px;
+    flex-flow: row nowrap;
+    gap: 80px;
   }
 
   .footer__form {
-    width: 100%;
+    width: fit-content;
   }
 
   .footer__form-input {
-    width: 100%;
-    flex-grow: 1;
+    width: 256px;
   }
 
   .footer__awards {
-    padding: 24px 20px;
-    gap: 12px;
+    justify-content: left;
+    gap: 24px;
+    padding: 40px 0;
+  }
+
+  .page__footer .container {
+    gap: 80px;
   }
 
   .footer__logo {
-    padding-top: 50px;
+    padding-top: 80px;
+  }
+
+  .footer__nav-title,
+  .footer__contacts-title,
+  .footer__subscribe-title {
+    padding-top: 80px;
   }
 }

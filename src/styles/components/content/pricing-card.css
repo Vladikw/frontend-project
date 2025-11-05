@@ -149,8 +149,32 @@
 
 @media (width <= 1023px) {
   .pricing-card__features {
-    display: grid;
     justify-content: center;
+    padding: 20px 40px 24px;
+    gap: 6px;
+  }
+
+  .pricing-card__price {
+    font-size: 36px;
+  }
+
+  .pricing-card__period {
+    font-size: 16px;
+  }
+
+  .pricing-card__divider {
+    width: calc(100% - 80px);
+  }
+
+  .pricing-card__feature {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  .pricing-card__button {
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
   }
 }
 

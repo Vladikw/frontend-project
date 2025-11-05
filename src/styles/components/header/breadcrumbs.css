@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   color: var(--text-inverse);
-  padding-top: 90px;
+  padding-top: 60px;
   padding-bottom: 40px;
   gap: 8px;
 }
@@ -40,8 +40,8 @@
   color: var(--text-inverse-secondary);
 }
 
-@media (width <= 1023px) {
+@media (--lg-viewport) {
   .breadcrumbs {
-    padding-top: 60px;
+    padding-top: 90px;
   }
 }
